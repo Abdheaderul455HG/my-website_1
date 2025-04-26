@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
 
 * {
@@ -216,3 +217,223 @@ nav {
 .nav-links_main li:hover {
     filter: drop-shadow(0 0 8px #5ED6C1); /* ثانوي - مميز */
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body {
+    background: #edeef1; /* خلفيات الأقسام، نص الفوتر */
+    padding-top: 80px;
+    background-size: cover;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background:#23A095; /* خلفية الهيدر والفوتر والعناوين */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+.nav-container_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.logo_main {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.logo_main:hover {
+    transform: scale(1.05);
+}
+
+.logo-icon_main {
+    height: 40px;
+    width: auto;
+    display: block;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+.nav-links_main {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links_main li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-links_main a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-links_main a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #00FF9D; /* Call to Action */
+    transition: all 0.3s ease;
+}
+
+.nav-links_main a:hover::before {
+    width: 80%;
+}
+
+.nav-links_main a::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    color: #00FF9D; /* Call to Action */
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.nav-links_main a:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nav-links_main a span {
+    transition: all 0.3s ease;
+}
+
+.nav-links_main a:hover span {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.table_navbar_main {
+    display: none;
+    cursor: pointer;
+}
+
+.table_navbar_main div {
+    width: 25px;
+    height: 3px;
+    background: #FFFFFF; /* وضوح وتباين */
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links_main {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background: #23A095; /* خلفيات متدرجة، أيقونات */
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0px at 90% -10%);
+        -webkit-clip-path: circle(0px at 90% -10%);
+        transition: all 0.8s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links_main.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .nav-links_main li {
+        opacity: 0;
+        margin: 20px 0;
+        transform: translateY(30px);
+        transition: all 0.3s ease 0.2s;
+    }
+    .nav-links_main.open li {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .nav-links_main a::before {
+        display: none;
+    }
+}
+
+.img_Regulations_communication {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+}
+.img_Regulations_communication img {
+    width: 600px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.caption_par {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* يجعل النص في وسط الصفحة عموديًا */
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight:bold;
+    background: #f4f4f4; /* يمكنك تغيير الخلفية حسب التصميم */
+}
+
+.caption_par p {
+    max-width: 800px; /* لتحديد عرض النص */
+    line-height: 1.6;
+    color: #333; /* تحديد لون النص */
+} 
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.nav-links_main a:hover {
+    animation: pulse 0.5s ease;
+}
+.nav-links_main li:hover {
+    filter: drop-shadow(0 0 8px #5ED6C1); /* ثانوي - مميز */
+}
+>>>>>>> 8a0861a5a318ce31a7ed69a96a2e9f1499f04125

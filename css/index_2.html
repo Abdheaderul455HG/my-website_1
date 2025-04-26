@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -140,3 +141,147 @@
   
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شؤون الطلبة</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="./style_2.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav>
+    <div class="nav-container_main">
+        <a href="#" class="logo_nav_main" title="شعار الشركة">
+            <img src="/img/WhatsApp Image 2025-04-20 at 04.21.36_c9a01cbc.jpg" alt="شعار الجامعة " class="logo-icon_nav_main">
+        </a>
+        <ul class="nav-links_header">
+            <li><a href="#" data-text="الرئيسية"><span>الرئيسية</span></a></li>
+            <li><a href="/index.html" data-text="الخدمات"><span>الخدمات</span></a></li>
+            <li><a href="./index_3.html" data-text="قوانين الجامعة"><span>قوانين الجامعة</span></a></li>
+            <li><a href="./index_4.html" data-text="اللوائح و الانظمة"><span>اللوائح و الانظمة</span></a></li>
+        </ul>
+    
+        <div class="table_navbar_main" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</nav>
+
+    <!-- محتوى الصفحة -->
+    <div class="main-content_cards">
+        
+        <!-- نموذج الاستفسار -->
+        <div class="form-card_private">
+            <div class="card-header_private">
+                <h2>نموذج الاستفسار</h2>
+            </div>
+            
+            <form>
+                <div class="form-group_card">
+                    <label for="name">الاسم الأول</label>
+                    <input type="text" id="name" class="form-control_card" required>
+                </div>
+                
+                <div class="form-group_card">
+                    <label for="studentId">رقم القيد الجامعي</label>
+                    <input type="text" id="studentId" class="form-control_card" required>
+                </div>
+                
+                <div class="form-group_card">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" class="form-control_card" required>
+                </div>
+                
+                <div class="form-group_card">
+                    <label for="specialization">اختر نوع التخصص</label>
+                    <select id="specialization" class="form-control_card" required>
+                        <option value="" selected disabled></option>
+                        <option value="engineering">تكنولوجيا المعلومات </option>
+                        <option value="medicine">تكنولوجيا السكك الحديد</option>
+                        <option value="science">تكنولوجيا الصناعات الغذائية</option>
+                        <option value="science">تكنولوجيا الجرارات والمعدات الزراعية</option>
+                        <option value="arts">تكنولوجيا تشغيل وصيانة ماكينات الغزل والنسيج</option>
+                      
+                        <option value="business">مساعد صيدلي</option>
+                        <option value="business">مساعد أسنان</option>
+                        <option value="business">مساعد تمريض</option>
+                    </select>
+                </div>
+                
+                <div class="form-group_card">
+                    <label for="inquiry">تفاصيل الاستفسار أو الطلب</label>
+                    <textarea id="inquiry" class="form-control_card" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn_send">
+                    إرسال الطلب
+                </button>
+            </form>
+        </div>
+
+        <!-- شؤون الطلبة -->
+        <div class="contact-card_main">
+            <div class="card-header_main">
+                <h2>التواصل مع شؤون الطلبة</h2>
+            </div>
+            
+            <div class="contact-info_comunication">
+                <div class="info-item_conect" onclick="window.open('https://wa.me/2012568565654', '_blank')">
+                    <div class="icons">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="info-content_part">
+                        <h3>رقم الهاتف / واتساب</h3>
+                        <p><a href="https://wa.me/01013101727" class="whatsapp-link">01013101727</a></p>
+                    </div>
+                </div>
+                
+                <div class="info-item_conect">
+                    <div class="icons">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content_part">
+                        <h3>البريد الإلكتروني</h3>
+                        <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=batu.mediadept@gmail.com" class="googleapis">batu.mediadept@gmail.com</a></p>
+                    </div>
+                    
+                </div>
+                
+                <div class="info-item_conect">
+                    <div class="icons">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content_part">
+                        <h3>الموقع</h3>
+                       <a href="https://www.google.com/maps/search/?api=1&query=30.857777777778,29.571722222222" target="_blank" class="googleapis"> مبنى الإدارة - الدور الأرضي</a>
+
+                    </div>
+                </div>
+
+                <div class="info-item_conect">
+                    <div class="icons">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <div class="info-content_part">
+                        <h3>أوقات الدوام</h3>
+                        <p>من السبت إلى الخميس من الساعة 8 صباحاً إلى 4 مساءً</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="/js/script.js"></script>
+  
+</body>
+</html>
+>>>>>>> 8a0861a5a318ce31a7ed69a96a2e9f1499f04125
